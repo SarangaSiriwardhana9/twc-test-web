@@ -25,8 +25,8 @@ export default function SignOut() {
 
   return (
     <div className='flex flex-row'>
-      <RiLogoutCircleLine className='text-white text-2xl mt-1' />
-      <button onClick={handleSignOut} className='text-white text-xl ml-3 underline '>logout</button>
+      
+      <button onClick={handleSignOut} className='text-white text-xl ml-3 underline flex flex-row gap-x-2 '><RiLogoutCircleLine className='text-white text-2xl mt-1' />logout</button>
 
   </div>
 )
