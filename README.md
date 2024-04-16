@@ -16,9 +16,6 @@ To run the app locally, follow these steps:
 2. Navigate to the project directory and run `npm install` to install dependencies.
 3. Start the development server by running `npm run dev`.
 
-## Screenshots
-
-- Include screenshots of your app here (optional).
 
 ## Deployment
 The project is deployed on [Render](https://twc-intern-assignment-deployed.onrender.com). 
