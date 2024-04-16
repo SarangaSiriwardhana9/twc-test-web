@@ -255,7 +255,7 @@ export default function Contacts() {
       )}
       {showDeleteSuccess && <DeleteContactSuccess onClose={() => setShowDeleteSuccess(false)} />}
       {showEditSuccess && <EditSuccess onClose={() => setShowEditSuccess(false)} />}
-      <div className="fixed bottom-0 right-0 m-4 md:m-8">
+      <div className="fixed z-50 bottom-0 right-0 m-4 md:m-8">
         <SignOut />
       </div>
       <div className="absolute z-10 -left-6 -bottom-6">
