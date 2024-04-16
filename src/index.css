@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+  }
+  
+  .top-right {
+    border-width: 0 0 140px 140px;
+    border-color: transparent transparent #fff transparent;
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg);
+  }
+  
+  .bottom-left {
+    border-width: 140px 140px 0 0;
+    border-color: #c22b2b transparent transparent transparent;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+  }
+/* Hide the scrollbar for webkit browsers */
+.overflow-y-auto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the scrollbar for other browsers */
+.overflow-y-auto {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
