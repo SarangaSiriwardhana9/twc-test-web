@@ -64,8 +64,8 @@ export default function SignUp() {
       if (err.message.includes('duplicate key error collection')) {
         console.error('User already exists!');
         enqueueSnackbar('user allready existes ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-          backgroundColor: '#aa4d4d', // Set background color
-          color: 'white', // Set text color
+          backgroundColor: '#aa4d4d', 
+          color: 'white', 
           borderRadius: '16px',
         } });
       } else {
@@ -75,8 +75,8 @@ export default function SignUp() {
       // Show alert for password mismatch
       if (err.message === 'Passwords do not match') {
         enqueueSnackbar('Passwords do not match ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-          backgroundColor: '#aa4d4d', // Set background color
-          color: 'white', // Set text color
+          backgroundColor: '#aa4d4d', 
+          color: 'white', 
           borderRadius: '16px',
         } });
       }
@@ -91,7 +91,7 @@ export default function SignUp() {
           style={{
             backgroundImage: `url('/back.jpg')`,
             opacity: 0.1,
-            zIndex: -1, // Ensure the background is behind other content
+            zIndex: -1, 
             backgroundSize: '50%',
           }}
         />

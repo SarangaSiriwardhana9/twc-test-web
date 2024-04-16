@@ -60,8 +60,8 @@ export default function SignIn() {
         dispatch(signInFailure(data));
         // Add alert for failure
         enqueueSnackbar('Invalid username or password ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-          backgroundColor: '#aa4d4d', // Set background color
-          color: 'white', // Set text color
+          backgroundColor: '#aa4d4d', 
+          color: 'white', 
           borderRadius: '16px',
         } });
       }
@@ -70,8 +70,8 @@ export default function SignIn() {
       // Add alert for failure
       
       enqueueSnackbar('An error occurred during login ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-        backgroundColor: '#aa4d4d', // Set background color
-        color: 'white', // Set text color
+        backgroundColor: '#aa4d4d', 
+        color: 'white',
         borderRadius: '16px',
       } });
       
@@ -89,7 +89,7 @@ export default function SignIn() {
           style={{
             backgroundImage: `url('/back.jpg')`,
             opacity: 0.1,
-            zIndex: -1, // Ensure the background is behind other content
+            zIndex: -1, 
             backgroundSize: '50%',
           }}
         />

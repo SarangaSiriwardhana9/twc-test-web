@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
 
 export default function NewContact() {
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // State to manage success message display
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false); 
   const { currentUser } = useSelector((state) => state.user);
   const { enqueueSnackbar } = useSnackbar();
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export default function NewContact() {
     fullName: '',
     email: '',
     phoneNumber: '',
-    gender: 'male', // Default gender
+    gender: 'male', 
   });
 
   const handleChange = (e) => {
@@ -46,7 +46,7 @@ export default function NewContact() {
           phoneNumber: '',
           gender: 'male',
         });
-        // Show success message and after 2 seconds, navigate to contacts page
+        
         setShowSuccessMessage(true);
         setTimeout(() => {
           navigate('/contacts');
@@ -56,16 +56,16 @@ export default function NewContact() {
         const data = await res.json();
         
         enqueueSnackbar('Failed to add contact ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-          backgroundColor: '#aa4d4d', // Set background color
-          color: 'white', // Set text color
+          backgroundColor: '#aa4d4d', 
+          color: 'white', 
           borderRadius: '16px',
         } });
       }
     } catch (error) {
       
       enqueueSnackbar('An error occurred.try again later ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-        backgroundColor: '#aa4d4d', // Set background color
-        color: 'white', // Set text color
+        backgroundColor: '#aa4d4d', 
+        color: 'white', 
         borderRadius: '16px',
       } });
       console.error(error);
@@ -184,7 +184,7 @@ export default function NewContact() {
           </div>
         </form>
       </div>
-      {/* Add contact success message */}
+      
       {/* Conditionally render success message */}
 {showSuccessMessage && (
         <AddContactSuccess onClose={() => setShowSuccessMessage(false)} />
