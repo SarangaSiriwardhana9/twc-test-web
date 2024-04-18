@@ -8,6 +8,11 @@ This is the frontend React app for the TWC Contacts Portal App, built as part of
 - Vite
 - Tailwind CSS
 
+## State Management
+
+- Redux is used for state management throughout the application.
+
+
 ## Getting Started
 
 To run the app locally, follow these steps:
