@@ -75,8 +75,8 @@ export default function SignUp() {
       // Show alert for password mismatch
       if (err.message === 'Passwords do not match') {
         enqueueSnackbar('Passwords do not match ☹️', { variant: 'error',autoHideDuration: 1500, style: {
-          backgroundColor: '#aa4d4d', 
-          color: 'white', 
+          backgroundColor: '#aa4d4d', // Set background color
+          color: 'white', // Set text color
           borderRadius: '16px',
         } });
       }
@@ -144,7 +144,7 @@ export default function SignUp() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="mt-6 border border-gray-100 text-white font-bold py-1.5 px-6 rounded-3xl  hover:bg-[#173d5a]"
+                  className="mt-6 border border-gray-100 text-white font-bold py-1.5 px-6 rounded-3xl  hover:bg-[#0b525b]"
                 >
                   {loading ? "registering..." : "register"}
                 </button>

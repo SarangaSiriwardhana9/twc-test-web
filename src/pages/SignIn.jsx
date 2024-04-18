@@ -71,7 +71,7 @@ export default function SignIn() {
       
       enqueueSnackbar('An error occurred during login ☹️', { variant: 'error',autoHideDuration: 1500, style: {
         backgroundColor: '#aa4d4d', 
-        color: 'white',
+        color: 'white', 
         borderRadius: '16px',
       } });
       
@@ -133,7 +133,7 @@ export default function SignIn() {
                   <button
                     type='submit'
                     disabled={loading}
-                    className=" mt-6 border border-gray-100 text-white hover:bg-[#173d5a] font-bold py-1.5 px-8 rounded-3xl"
+                    className=" mt-6 border border-gray-100 text-white hover:bg-[#0b525b] font-bold py-1.5 px-8 rounded-3xl"
                   >
                     {loading ? "logging In..." : "login"}
                   </button>
