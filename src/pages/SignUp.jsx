@@ -91,11 +91,10 @@ export default function SignUp() {
           style={{
             backgroundImage: `url('/back.jpg')`,
             opacity: 0.1,
-            zIndex: -1, 
+            zIndex: -1,
             backgroundSize: '50%',
           }}
         />
-        
         <div className="flex-1 bg-[#083F46] rounded-r-[50%] pr-10 -my-20 overflow-hidden">
           {/* Left side - Sign Up component */}
           <div className="flex items-center justify-center h-full p-2 ">
@@ -157,7 +156,7 @@ export default function SignUp() {
             </div>
           </div>
         </div>
-        <div className="flex-1  rounded-l-[10%]">
+        <div className="flex-1 hidden md:block rounded-l-[10%]">
           {/* Right side - Simple text */}
           <div className="flex items-center justify-start h-full ml-24">
             <div className="flex flex-col ">
@@ -170,4 +169,5 @@ export default function SignUp() {
       </div>
     </div>
   );
+  
 }

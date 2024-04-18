@@ -89,7 +89,7 @@ export default function SignIn() {
           style={{
             backgroundImage: `url('/back.jpg')`,
             opacity: 0.1,
-            zIndex: -1, 
+            zIndex: -1, // Ensure the background is behind other content
             backgroundSize: '50%',
           }}
         />
@@ -104,7 +104,6 @@ export default function SignIn() {
               </div>
               <form onSubmit={handleSubmit} className="mt-4">
                 <div className="mb-4 mt-12">
-
                   <input
                     type='email'
                     id='email'
@@ -117,7 +116,6 @@ export default function SignIn() {
                   />
                 </div>
                 <div className="mb-4 mt-8">
-
                   <input
                     type='password'
                     id='password'
@@ -142,14 +140,11 @@ export default function SignIn() {
                     <Link to='/signup' className=" px-2 text-slate-200 underline  font-medium">Click here to Register</Link>
                   </span>
                 </div>
-
               </form>
-
-
             </div>
           </div>
         </div>
-        <div className="flex-1  rounded-l-[10%]">
+        <div className="flex-1 hidden md:block rounded-l-[10%]">
           {/* Right side - Simple text */}
           <div className="flex items-center justify-start h-full ml-24">
             <div className="flex flex-col ">
@@ -157,11 +152,10 @@ export default function SignIn() {
               <h1 className="text-7xl text-[#083F46] font-bold mb-2">contacts </h1>
               <h1 className="text-6xl text-[#083F46]  mb-3">portal</h1>
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
   );
+  
 }
